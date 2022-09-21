@@ -20,11 +20,14 @@
 
         function imc(peso, altura){
             var imc = peso / (altura*altura);
-            mostra("seu imc é " + Math.round(imc));
+            return imc;//usando return para retornar um valor da função
         }
 
-        imc(70, 1.60);
-        imc(63, 1.63);
+        var carlos = imc(70, 1.60);
+        var amigo = imc(63, 1.63);
+
+        mostra("imc do carlos é: " + carlos);
+        mostra("imc do amigo do carlos é: " + amigo);
 
     </script>
 </body>
